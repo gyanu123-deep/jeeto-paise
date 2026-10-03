@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("/static/image/Jeeto Paise.jpg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGIN CARD */
+.login-box {
+    width: 380px;
+    padding: 40px;
+
+    background: rgba(15, 15, 20, 0.88);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+
+    backdrop-filter: blur(8px);
+}
+
+/* HEADING */
+.login-box h1 {
+    margin-bottom: 30px;
+
+    color: white;
+
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+/* INPUT BOX */
+.login-box input {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 18px;
+
+    border: 2px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    color: white;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+/* PLACEHOLDER */
+.login-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* INPUT CLICK EFFECT */
+.login-box input:focus {
+    border-color: orange;
+
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* LOGIN BUTTON */
+.login-box button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: orange;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.login-box button:hover {
+    background: darkorange;
+
+    transform: scale(1.02);
+}

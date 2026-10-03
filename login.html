@@ -2,12 +2,16 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Jeeto Paise - College Event</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
 </head>
 
 <body>
@@ -16,14 +20,33 @@
 
         <h1>JEETO PAISE</h1>
 
-        <form>
-            <input type="text" placeholder="Enter your name">
+        <form action="/register" method="POST">
 
-            <input type="email" placeholder="Enter your email">
+            <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
 
-            <input type="password" placeholder="Enter password">
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
 
-            <button type="submit">Login</button>
+            <input
+                type="password"
+                name="password"
+                placeholder="Create password"
+                required
+            >
+
+            <button type="submit">
+                Register
+            </button>
+
         </form>
 
     </div>
